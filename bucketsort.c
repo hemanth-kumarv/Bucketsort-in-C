@@ -4,8 +4,10 @@ void Bucket_Sort(int array[], int n, int max, int min)
 {
     int i, j = 0;
     int cpos[max+1], cneg[-(min-1)];
-    for (i = 0; i <= max - min; i++)
-        cpos[i] = cneg[i] = 0;
+    for (i = 0; i <= max; i++)
+        cpos[i] = 0;
+    for (i = 0; i <= -(min-1); i++)
+        cneg[i] = 0;
 
     for (i = 0; i < n; i++)
     {
