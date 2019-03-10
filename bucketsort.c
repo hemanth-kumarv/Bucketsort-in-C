@@ -18,11 +18,11 @@ void Bucket_Sort(int array[], int n, int max, int min)
     }
 
     for (i = -min; i > 0; i--)
-        for(; cneg[i] > 0; (cneg[i])--)
+        for (; cneg[i] > 0; (cneg[i])--)
             array[j++] = -i;
 
     for (i = 0; i <= max; i++)
-        for(; cpos[i] > 0; (cpos[i])--)
+        for (; cpos[i] > 0; (cpos[i])--)
             array[j++] = i;
 }
 
@@ -34,11 +34,11 @@ int main()
     printf("Enter the %d elements to be sorted:\n",num);
     for (i = 0; i < num; i++)
         scanf("%d", &array[i]);
-    for(i = 0; i < num; i++)
+    for (i = 0; i < num; i++)
     {
-        if(array[i] > max)
+        if (array[i] > max)
             max = array[i];
-        if(array[i] < min)
+        if (array[i] < min)
             min = array[i];
     }
     if (min >= 0)min = 0;
